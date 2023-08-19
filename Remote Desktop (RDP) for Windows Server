@@ -1,0 +1,20 @@
+Test the status of Windows Startup
+After a short time, the Windows Server instance will be provisioned and 
+listed on the VM Instances page with a green status iconGreen Status Icon.
+
+The server instance may not be ready to accept RDP connections, as it takes a while for all OS components to initialize.
+
+
+To see whether the server instance is ready for an RDP connection, 
+run the following command at your Cloud Shell terminal command line:
+        gcloud compute instances get-serial-port-output instance-1
+
+If prompted, type N and press ENTER.
+
+
+RDP into the Windows Server
+To set a password for logging into the RDP, run the following command in Cloud Shell. 
+Be sure you replace [instance] with the VM Instance that you created,
+[zone] that you defined earlier and set [username] as admin or name we like to use.
+                 gcloud compute reset-windows-password [instance] --zone [zone] --user [username]
+
