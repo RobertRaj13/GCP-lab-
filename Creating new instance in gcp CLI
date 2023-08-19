@@ -1,0 +1,16 @@
+Instead of using the Cloud console to create a VM instance,
+use the command line tool gcloud, which is pre-installed in Google Cloud Shell. 
+Cloud Shell is an interactive shell environment for Google Cloud loaded with all the development tools you need (gcloud, git, and others) 
+and offers a persistent 5-GB home directory
+
+
+In the Cloud Shell, use gcloud to create a new VM instance from the command line:
+                   gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE
+
+To see all the defaults, run:  
+                   gcloud compute instances create --help
+
+You can also use SSH to connect to your instance via gcloud. Make sure to add your zone, 
+or omit the --zone flag if you've set the option globally: 
+                             gcloud compute ssh gcelab2 --zone=$ZONE
+
