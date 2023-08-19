@@ -4,8 +4,8 @@ Click  Activate Cloud Shell at the top of the Google Cloud console.
 
 When you are connected, you are already authenticated, and the project is set to your PROJECT_ID. The output contains a line that declares the PROJECT_ID for this session:
 
-(Optional) You can list the active account name with this command: gcloud auth list 
+(Optional) You can list the active account name with this command:                      gcloud auth list 
 Click Authorize.
 
-You can list the project ID with this command: gcloud config list project
+You can list the project ID with this command:                   gcloud config list project
 
