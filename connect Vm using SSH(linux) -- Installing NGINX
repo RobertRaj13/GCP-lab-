@@ -1,0 +1,13 @@
+To use SSH to connect to the VM, click SSH to the right of the instance name.
+                       ||
+  This launches an SSH client directly from your browser. 
+
+  Install an NGINX web server by the commends 
+
+Update the OS: sudo apt-get update 
+Install NGINX: sudo apt-get install -y nginx
+Confirm that NGINX is running: ps auwx | grep nginx
+
+
+To see the web page, return to the Cloud console and click the External IP link in the row for your machine, 
+or add the External IP value to http://EXTERNAL_IP/ in a new browser window or tab
